@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  ConvertArrayToButton
 //
-//  Created by Elif Karakolcu on 26.01.2023.
+//  
 //
 
 import UIKit
