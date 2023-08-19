@@ -38,7 +38,7 @@ extension ViewController{
             button.layer.borderWidth = 1
             button.layer.cornerRadius = 6
             button.layer.borderColor = UIColor.systemBrown.cgColor
-            button.backgroundColor = UIColor.white
+            button.backgroundColor = .white
             button.titleLabel?.textAlignment = .center
             
             let newWidth = (array[i-1].count )*10 + 2
@@ -94,6 +94,8 @@ extension ViewController{
 extension ViewController {
     @objc func selectorButton(_ sender: UIButton){
         sender.isSelected = !sender.isSelected
-        sender.backgroundColor = sender.isSelected ? UIColor.systemBrown : UIColor.white
+        sender.backgroundColor = sender.isSelected ? .systemBrown : .white
+        let color = sender.isSelected ? UIColor.white : UIColor.black
+        sender.setTitleColor(color, for: .normal)
     }
 }
